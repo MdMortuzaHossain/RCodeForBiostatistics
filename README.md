@@ -1,4 +1,4 @@
-Author: Md Mortuza Hossain
+Author: Md Mortuza Hossain<br>
 #**One_way ANOVA** <br>
 library(agricolae)<br>
 group_A <- c(23, 20, 27, 24, 35, 28, 22, 25, 33, 21)<br>
@@ -47,8 +47,7 @@ group_C <- c(29, 30, 28, 32, 31, 27, 33, 26, 34, 35)<br>
 data <- data.frame(<br>
   score = c(group_A, group_B, group_C),<br>
   group = factor(rep(c("A", "B", "C"), each = 10))<br>
-)<br><br>
-
+)<br>
 ggplot(data, aes(x = group, y = score)) + <br>
   geom_boxplot() +<br>
   labs(title = "Boxplot of Scores by Group",<br>
@@ -67,7 +66,7 @@ group_C <- c(29, 30, 28, 32, 31, 27, 33, 26, 34, 35)<br>
 data <- data.frame(<br>
   score = c(group_A, group_B, group_C),<br>
   group = factor(rep(c("A", "B", "C"), each = 10))<br>
-)<br><br>
+)<br>
 ggplot(data, aes(x = group, y = score, fill = group)) + <br>
   geom_boxplot() +<br>
   labs(title = "Boxplot of Scores by Group",<br>
